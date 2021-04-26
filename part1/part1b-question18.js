@@ -1,8 +1,7 @@
-let d = new Date();
+setInterval(set_time, 1000);
 
-function set_time(d) {
+function set_time() {
+    let d = new Date();
     let time = d.toLocaleDateString();
     console.log(time);
-}
-
-let interval = window.setInterval(set_time, 1000, d);
+};

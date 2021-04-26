@@ -1,40 +1,40 @@
 # part 1a.
 
-1. result
-2. result
-3. result
+1. values added: 20
+2. final result: 20
+3. values added: 20
 4. Error, because result is declared using ```let``` and cannot be accessed out of the block it was declared in.
-5. 0
+5. Error, because the ```const``` cannot be reassigned.
 6. Error, because ```const``` has the same scope as ```let``` and cannot be accessed out of the block it was declared in.
 
 # part 1b.
 
-1. Line 12 will print prices.length since ```i``` was declared using ```var```.
-2. Line 13 will print the ```discountedPrice``` since it was declared in the block above using ```var```.
-3. Line 14 will print ```finalPrice``` since it was declared using ```var``` and is in the same block.
-4. The function will return an array of the discounted prices, stored in ```discounted```.
+1. Line 12 will print 3 since ```i``` was declared using ```var``` and 3 is the length of the array.
+2. Line 13 will print 150, since it's the last ```discountedPrice``` since it was declared in the block above using ```var```.
+3. Line 14 will print 150, the last ```finalPrice``` since it was declared using ```var``` and is in the same block.
+4. The function will return an array of the discounted prices, stored in ```discounted```. In this case, it's [50, 100, 150].
 5. Line 12 will cause an error, because ```i``` was declared in the block for the for loop using ```let```.
 6. Line 13 will cause an error, because ```discountedPrice``` was declared in the block for the for loop using ```let```.
-7. Line 14 will print ```finalPrice``` since it was declared using ```let``` and is in the same block.
-8. The function will return an array of the discounted prices, stored in ```discounted```.
+7. Line 14 will print 150, the last ```finalPrice``` since it was declared using ```let``` and is in the same block.
+8. The function will return an array of the discounted prices, stored in ```discounted```. In this case, it's [50, 100, 150].
 9. Line 11 will cause an error, becuase ```i``` was declared in the block for the for loop using ```let```.
-10. Line 12 will print ```length```, which is ```prices.length``` because it was declared as a ```const``` and cannot be changed, and it is also in the same block so it falls in the same scope.
-11. The function will return an empty array, as it was declared using ```const``` in the beginning of the function and cannot be changed.
+10. Line 12 will print 3, ```length``` in this case, which is ```prices.length``` because it was declared as a ```const``` and cannot be changed, and it is also in the same block so it falls in the same scope.
+11. The function returns the array of discounted prices, stored in ```discounted```. In this case, it's [50, 100, 150].
 12. A. student.name
     B. student["Grad Year"]
     C. student.greeting()
     D. student["Favorite Teacher"].name
     E. student.courseLoad[0]
-13. A. Error, types do not match
-    B. Error, types do not match
+13. A. 32, since the 2 becomes a string (matches the "3", the first entry) and the plus operation concatonates strings.
+    B. 1, the 3 is converted to a number since subtraction is only an integer operation.
     C. 3, null converts to 0 when added to an int.
-    D. Error, cannot add null to ```'3'```
+    D. 3null, null is concatonated to "3", a string.
     E. 4, true is converted to 1.
     F. 0, false and null are converted to 0.
     G. 3undefined, adding a string and undefined together concatonates them.
     H. NaN, cannot subtract undefined from a string.
 14. A. True, JavaScript converts the string to a number and compares.
-    B. True, JavaScript compares strings lexographically.
+    B. False, JavaScript compares strings lexographically.
     C. True, ```==``` compares two variables regardless of datatype.
     D. False, ```===``` compares two variables and takes datatype into account.
     E. False, ```true``` converts to ```1``` and that is not equivalent.

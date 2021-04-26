@@ -1,5 +1,5 @@
-1. ```result``` concatonates the two values instead of adding. 
-2. To fix this, convert ```num1``` and ```num2``` by using ```parseInt()```.
+1. ```result``` concatonates the two values (they're taken in as strings instead of ints) instead of adding. 
+2. To fix this, convert ```num1``` and ```num2``` by using ```Number()```.
 3. citylots.json
 4. part2.js
 5. 11.7 MB
@@ -8,4 +8,4 @@
 8. Apache
 9. Tue, 26 Jan 2021 22:14:13 GMT
 10. application/json
-11. onClick
+11. onclick
